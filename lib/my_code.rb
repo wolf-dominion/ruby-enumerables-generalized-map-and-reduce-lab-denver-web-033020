@@ -21,13 +21,9 @@ def reduce(array, sv=nil)
     total = 0
   end
   
-  truthyTest = false
   count = 0
   
   while count < array.length
-    if array[count] == true
-      truthyTest = true
-    end
     total = (yield(total, array[count]))
     count += 1
   end
