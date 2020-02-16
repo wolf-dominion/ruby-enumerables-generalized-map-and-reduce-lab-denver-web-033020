@@ -12,7 +12,7 @@ def map(array)
 end
 
 def reduce(array, sv=nil)
-  
+  count = 0
   total = 0
   
   if sv
@@ -20,9 +20,7 @@ def reduce(array, sv=nil)
   else
     total = array[count]
   end
-  
-  count = 0
-  
+
   while count < array.length
     total = (yield(total, array[count]))
     count += 1
