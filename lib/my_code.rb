@@ -12,7 +12,7 @@ def map(array)
 end
 
 def reduce(array, sv=nil)
-  count = 0
+  count = 1
   total = 0
   
   if sv
