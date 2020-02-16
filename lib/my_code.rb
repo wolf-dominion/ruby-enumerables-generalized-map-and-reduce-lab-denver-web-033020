@@ -13,6 +13,8 @@ end
 
 def reduce(array, sv=nil)
   
+  total = 0
+  
   if sv
     total =  sv
   else
