@@ -17,6 +17,7 @@ def reduce(array, sv=nil)
   
   if sv
     total =  sv
+    count = 0
   else
     total = array[0]
   end
